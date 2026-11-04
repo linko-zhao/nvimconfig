@@ -20,6 +20,15 @@ return {
             separator = true,
           }
         },
+				indicator = {
+					icon = "▎",
+					style = "none",
+				},
+				hover = {
+					enabled = true,
+					delay = 200,
+					reveal = {'close'}
+				},
         -- 集成 LSP 诊断信息
         diagnostics = "nvim_lsp",
         diagnostics_indicator = function(count, level)
@@ -53,8 +62,8 @@ return {
 				-- 当前 buffer
 				buffer_selected = {
 					fg = "#ffffff",
-					bg = "#1f1f1f",
-					bold = false,
+					bg = "#242d38",
+					bold = true,
 					italic = false,
 				},
 
@@ -73,8 +82,8 @@ return {
 				},
 
 				separator_selected = {
-					fg = "#1f1f1f",
-					bg = "#1f1f1f",
+					fg = "#242d38",
+					bg = "#242d38",
 				},
 
 				separator_visible = {
@@ -89,8 +98,8 @@ return {
 				},
 
 				close_button_selected = {
-					fg = "#cccccc",
-					bg = "#1f1f1f",
+					fg = "#ffffff",
+					bg = "#242d38",
 				},
 
 				close_button_visible = {
@@ -106,7 +115,7 @@ return {
 
 				modified_selected = {
 					fg = "#d7ba7d",
-					bg = "#1f1f1f",
+					bg = "#242d38",
 				},
 
 				modified_visible = {
@@ -122,10 +131,10 @@ return {
 				},
 
 				duplicate_selected = {
-					fg = "#cccccc",
-					bg = "#1f1f1f",
+					fg = "#ffffff",
+					bg = "#242d38",
 					italic = true,
-					bold = false,
+					bold = true,
 				},
 
 				duplicate_visible = {
@@ -137,7 +146,7 @@ return {
 				-- 当前 tab indicator
 				indicator_selected = {
 					fg = "#007acc",
-					bg = "#1f1f1f",
+					bg = "#242d38",
 				},
 
 				-- diagnostic
@@ -147,9 +156,9 @@ return {
 				},
 
 				diagnostic_selected = {
-					fg = "#cccccc",
-					bg = "#1f1f1f",
-					bold = false,
+					fg = "#ffffff",
+					bg = "#242d38",
+					bold = true,
 					italic = false,
 				},
 
@@ -165,8 +174,8 @@ return {
 
 				error_selected = {
 					fg = "#f14c4c",
-					bg = "#1f1f1f",
-					bold = false,
+					bg = "#242d38",
+					bold = true,
 					italic = false,
 				},
 
@@ -182,8 +191,8 @@ return {
 
 				warning_selected = {
 					fg = "#cca700",
-					bg = "#1f1f1f",
-					bold = false,
+					bg = "#242d38",
+					bold = true,
 					italic = false,
 				},
 
@@ -199,8 +208,8 @@ return {
 
 				info_selected = {
 					fg = "#3794ff",
-					bg = "#1f1f1f",
-					bold = false,
+					bg = "#242d38",
+					bold = true,
 					italic = false,
 				},
 
@@ -216,8 +225,8 @@ return {
 
 				hint_selected = {
 					fg = "#4ec9b0",
-					bg = "#1f1f1f",
-					bold = false,
+					bg = "#242d38",
+					bold = true,
 					italic = false,
 				},
 
@@ -234,8 +243,8 @@ return {
 
 				error_diagnostic_selected = {
 					fg = "#f14c4c",
-					bg = "#1f1f1f",
-					bold = false,
+					bg = "#242d38",
+					bold = true,
 				},
 
 				warning_diagnostic = {
@@ -245,8 +254,8 @@ return {
 
 				warning_diagnostic_selected = {
 					fg = "#cca700",
-					bg = "#1f1f1f",
-					bold = false,
+					bg = "#242d38",
+					bold = true,
 				},
 
 				info_diagnostic = {
@@ -256,8 +265,8 @@ return {
 
 				info_diagnostic_selected = {
 					fg = "#3794ff",
-					bg = "#1f1f1f",
-					bold = false,
+					bg = "#242d38",
+					bold = true,
 				},
 
 				hint_diagnostic = {
@@ -267,8 +276,8 @@ return {
 
 				hint_diagnostic_selected = {
 					fg = "#4ec9b0",
-					bg = "#1f1f1f",
-					bold = false,
+					bg = "#242d38",
+					bold = true,
 				},
 			},
 		},
