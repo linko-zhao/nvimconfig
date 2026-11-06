@@ -4,8 +4,8 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Line Diagnostics" })
 
 -- 跳转到上一个/下一个报错
-keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic" })
-keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diagnostic" })
+keymap.set("n", "[d", function() vim.diagnostic.jump({ count = -1 }) end, { desc = "Go to previous diagnostic" })
+keymap.set("n", "]d", function() vim.diagnostic.jump({ count = 1 }) end, { desc = "Go to next diagnostic" })
 
 -- 将所有报错放入 Quickfix 列表
 keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Diagnostic Quickfix" })
