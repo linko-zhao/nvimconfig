@@ -52,9 +52,9 @@ return {
 		{
 			"<leader>to",
 			function()
-				require("neotest").output.open({ last_run = true, enter = true })
+				require("neotest").output_panel.toggle()
 			end,
-			desc = "Open Last Test Output",
+			desc = "Toggle Test Output Panel",
 		},
 		{
 			"<leader>ts",
