@@ -57,6 +57,13 @@ return {
 			desc = "Toggle Test Output Panel",
 		},
 		{
+			"<leader>tc",
+			function()
+				require("neotest").output_panel.clear()
+			end,
+			desc = "Clear Test Output Panel",
+		},
+		{
 			"<leader>ts",
 			function()
 				require("neotest").summary.toggle()
